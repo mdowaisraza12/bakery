@@ -1,0 +1,1294 @@
+body {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0% auto;
+    background-color: #643f1a !important;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+}
+
+
+
+/* NAVBAR */
+#navbar {
+    background-color: #210d0c;
+    width: 100vw !important;
+    font-weight: bold;
+
+}
+
+#logo21 {
+    width: 3em;
+    height: 3em;
+
+}
+
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    background-color: #e5e3b4;
+    color: #2e1700;
+    border-radius: 5px;
+}
+
+
+
+/* NAVBAR ENDS */
+
+
+
+/* HOME SECTION */
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./bgbg.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+
+
+}
+
+.home .img {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.home #heroimg {
+    width: 300px;
+    filter: drop-shadow(5px 5px 5px black);
+
+}
+
+
+
+.home .content {
+    flex: 1 1 400px;
+    padding-left: 5%;
+
+
+}
+
+.content h1 {
+    color: white;
+    font-size: 85px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+
+}
+
+.content h2 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: rgba(161, 109, 14, 1);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+
+.content p {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+/* CHANGE TEXT  */
+
+@keyframes changetext {
+    0% {
+        content: "Muffins";
+    }
+
+    20% {
+        content: "Toffee Puddings";
+    }
+
+    40% {
+        content: "Custard Tart";
+    }
+
+    60% {
+        content: "Donuts";
+    }
+
+    80% {
+        content: "Macarons";
+    }
+
+    100% {
+        content: "Banoffee Pie";
+    }
+
+
+}
+
+/* HOME SECTION ENDS */
+
+
+
+/* GALLARY IMAGES */
+
+
+#box {
+    margin-top: 50px;
+
+
+}
+
+#box .card {
+    box-shadow: 0px 0px 2px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+
+#box .card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* GALLARY IMAGES ENDS*/
+
+
+/* BANNER CSS*/
+.banner {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./home-bg.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 50px;
+
+}
+
+.banner .img {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .img #image2 {
+    width: 300px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.banner .content {
+    flex: 1 1 400px;
+    margin-top: 10px;
+}
+
+
+.banner .content h3 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.banner .content h2 {
+    font-size: 50px;
+    color: rgba(161, 109, 14, 1);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 60px;
+}
+
+.banner .content p {
+    color: rgb(251, 251, 251);
+    text-align: center;
+}
+
+
+
+
+
+/* BANNER CSS ENDS */
+
+
+/* BAKERY ITEM CARD CSS */
+
+#product-cards h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #e5e3b4;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 1px solid #e5e3b4;
+}
+
+#product-cards .card {
+    background-color: #e5e3b4;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-cards .card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+
+#product-cards .card:hover .overlay {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+
+}
+
+.overlay i img {
+    background-color: #2e1700;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px #000000);
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    padding: 7px;
+    margin: -20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.overlay .btn-secondary {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+
+#product-cards h3 {
+    color: #573818;
+    text-shadow: 1px 1px 1px black;
+}
+
+.star .checked {
+    color: rgb(131, 131, 7);
+}
+
+#product-cards p {
+    color: #2e1700;
+    font-weight: bold;
+}
+
+#product-cards h6 {
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+}
+
+
+
+/* BAKERY ITEM CARD CSS ENDS */
+
+/* SWEET ITEM CARD CSS */
+#product-sweet h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #e5e3b4;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 1px solid #e5e3b4;
+}
+
+#product-sweet .card {
+    background-color: #e5e3b4;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-sweet .card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+#product-sweet .card:hover .overlay {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+
+#product-sweet h3 {
+    color: #573818;
+    text-shadow: 1px 1px 1px black;
+}
+
+#product-sweet p {
+    color: #2e1700;
+    font-weight: bold;
+}
+
+#product-sweet h6 {
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+}
+
+/* SWEET ITEM CARD CSS */
+
+
+/* GIFT HAMPERS CSS */
+#gifthamper {
+    margin-top: 50px;
+}
+
+#gifthamper h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #e5e3b4;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 1px solid #e5e3b4;
+}
+
+#gifthamper .card{
+    background-color: #e5e3b4;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 3%;
+
+}
+#gifthamper .card-title{
+    font-size: 35px;
+    font-weight: bolder;
+    color: #573818;
+}
+#gifthamper .ghitem{
+    font-size: 17px;
+    color: #210d0c;
+    list-style: none;
+}
+#gifthamper .card-price{
+    font-size: 20px;
+    color: #643f1a;
+    font-weight: bolder;
+    text-shadow: 1px 0px 1px black;
+}
+/* GIFT HAMPER CSS ENDS */
+
+/* ABOUT US CSS */
+#about {
+    margin-top: 50px;
+}
+
+#about h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #e5e3b4;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 1px solid #e5e3b4;
+}
+
+#about .card {
+    background-color: #e5e3b4;
+    box-shadow: 0px 0px 5px black;
+}
+
+#about p {
+    color: white;
+
+    padding-top: 10%;
+}
+
+#aboutus {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ABOUT US CSS ENDS*/
+
+/* CONTACT FORM CSS */
+
+
+
+
+
+#contact {
+    margin-top: 100px;
+    
+}
+
+#contact h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #e5e3b4;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 1px solid #e5e3b4;
+}
+
+#contact input {
+    background-color: #e5e3b4;
+}
+
+#contact input::placeholder {
+    color: black;
+}
+
+#contact textarea {
+    background-color: #e5e3b4;
+}
+
+#contact textarea::placeholder {
+    color: black;
+}
+
+#contact #form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact #comment {
+    width: 825px;
+}
+
+
+#messagebtn {
+    text-align: center;
+
+}
+
+#messagebtn a {
+    width: 250px;
+    height: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-color: #e5e3b4;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#messagebtn a:hover {
+    background-color: #643f1a;
+    box-shadow: 0px 0px 10px 3px black;
+}
+
+/* CONTACT FORM CSS ENDS */
+
+/* FOOTER CSS  */
+#footer {
+    width: 100vw;
+    background-image: url(./footer.jpg);
+    background-size: cover;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+
+}
+
+#footer h2 {
+    color: #e5e3b4;
+    text-shadow: 1px 1px 1px black;
+    padding-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#footer p {
+    color: #e5e3b4;
+    text-shadow: 1px 1px 1px black;
+}
+
+.icons i {
+    background-color: #e5e3b4;
+    color: #573818;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    background-color: #e5e3b4;
+    color: white;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+
+.credite {
+    color: #e5e3b4;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* FOOTER CSS ENDS */
+/* HTML  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ARROW BUTTON CSS */
+.arrow {
+    position: fixed;
+    background: transparent;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*  CUSTOM SCROLL BAR  */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e5e3b4;
+    border-radius: 5px;
+}
+
+
+/* MEDIA QUEREIS */
+@media screen and (max-width:1301px) {
+
+    .home .content h1 {
+        font-size: 80px;
+    }
+
+    .home .content h2 {
+        font-size: 43px;
+    }
+
+    .home .content p {
+        font-size: 13px;
+    }
+
+    .img #heroimg {
+        width: 250px;
+    }
+
+    .banner .content h2 {
+        font-size: 55px;
+    }
+
+    .banner .content h3 {
+        font-size: 30px;
+    }
+
+    .banner .content p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:1224px) {
+
+    .home .content h1 {
+        font-size: 75px;
+    }
+
+    .home .content h2 {
+        font-size: 41px;
+    }
+
+    .home .content p {
+        font-size: 12px;
+    }
+
+    .img #heroimg {
+        width: 230px;
+    }
+
+}
+
+@media screen and (max-width:1199px) {
+    .home .content h1 {
+        font-size: 65px;
+    }
+
+    .home .content h2 {
+        font-size: 39px;
+    }
+
+    .home .content p {
+        font-size: 12px;
+    }
+
+    .img #heroimg {
+        width: 210px;
+    }
+    #product-sweet .card {
+        height: 375px;
+    }
+    #gifthamper .card-title{
+        font-size: 25px;
+        
+    
+    }
+    #gifthamper .ghitem li{
+        font-size: 13px;
+        
+    }
+    #gifthamper .card-price{
+        font-size: 20px;
+        
+    }
+
+
+    #contact #comment {
+        width: 690px;
+    }
+
+    #about .card {
+        margin-top: 10%;
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .home .content h1 {
+        font-size: 65px;
+    }
+
+    .home .content h2 {
+        font-size: 38px;
+    }
+
+    .home .content p {
+        font-size: 12px;
+    }
+
+    .img #heroimg {
+        width: 190px;
+    }
+
+    .banner .content h3 {
+        font-size: 25px;
+    }
+
+    .banner .content h2 {
+        font-size: 45px;
+    }
+
+    .banner .content p {
+        font-size: 13px;
+    }
+
+    .banner .img #image2 {
+        width: 250px;
+    }
+
+    #contact #comment {
+        width: 700px;
+    }
+
+
+
+}
+
+@media screen and (max-width:991px) {
+    .home .content h1 {
+        font-size: 60px;
+    }
+
+    .home .content h2 {
+        font-size: 35px;
+    }
+
+    .home .content p {
+        font-size: 12px;
+    }
+
+    #product-sweet .card {
+        height: 450px;
+    }
+
+    #product-cards .card {
+        height: 450px;
+    }
+
+    .card h3 {
+        text-align: center;
+    }
+
+    .card .star {
+        width: 120px;
+        align-items: center;
+
+    }
+
+    .card p {
+        text-align: center;
+    }
+
+    .card h6 {
+        text-align: center;
+    }
+
+    #gifthamper .card-title{
+        font-size: 20px;
+        
+    
+    }
+    #gifthamper .ghitem li{
+        font-size: 13px;
+        
+    }
+    #gifthamper .card-price{
+        font-size: 15px;
+        text-align: start;
+        
+    }
+    #gifthamper .img-fluid{
+        
+        height: 280px;
+    }
+    #about .card {
+        height: 450px;
+
+    }
+
+    #about .card img {
+        height: 450px;
+
+    }
+
+    #contact #comment {
+        width: 510px;
+    }
+
+
+}
+
+@media screen and (max-width:918px) {
+    .home .content h1 {
+        font-size: 55px;
+
+
+    }
+
+    .home .content h2 {
+        font-size: 30px;
+    }
+
+    .home .content p {
+        font-size: 11px;
+    }
+
+    .home {
+        height: 90vh;
+    }
+
+    .home #heroimg {
+        width: 190px;
+
+    }
+
+    .banner {
+        height: 90vh;
+
+    }
+
+    .banner .content h3 {
+        font-size: 25px;
+        padding-top: 6%;
+
+
+    }
+
+    .banner .content h2 {
+        font-size: 45px;
+    }
+
+    .banner .img #image2 {
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width:799px) {
+    .home {
+        height: 110vh;
+    }
+
+    .nav-link {
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .home .content {
+        padding-right: 5%;
+        padding-top: 3%;
+    }
+
+    .home .content h1 {
+        font-size: 60px;
+    }
+
+    .home .content h2 {
+        font-size: 35px;
+    }
+
+    .home .content p {
+        font-size: 12px;
+    }
+
+    .home #heroimg {
+        width: 180px;
+
+    }
+
+    .banner .img #image2 {
+        width: 300px;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #about p {
+        text-align: center;
+    }
+
+    #contact #comment {
+        width: 520px;
+    }
+
+
+
+}
+
+@media screen and (max-width:767px) {
+    #product-sweet .card {
+        height: 500px;
+    }
+
+    #product-cards .card {
+        height: 500px;
+    }
+    #gifthamper .img-fluid{
+        
+        height: 520px;
+        width: 520px;
+    }
+   .card-body .star{
+        width: 120px;
+        margin: 0% auto;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .home{
+        height: 105vh;
+    }
+    .home .content h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .home .content h2 {
+        font-size: 33px;
+
+    }
+
+    .home #heroimg {
+        width: 170px;
+
+    }
+
+    .home .content p {
+        text-align: center;
+        font-size: 12px;
+
+
+    }
+
+    .banner {
+        height: 110vh;
+    }
+
+    .banner .img #image2 {
+        width: 290px;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner .content h3 {
+        font-size: 30px;
+    }
+
+    .banner .content p {
+        font-size: 15px;
+    }
+
+    #product-sweet .card {
+        height: 520px;
+    }
+
+    #product-cards .card {
+        height: 520px;
+    }
+    #gifthamper .img-fluid{
+        
+        height: 550px;
+        width: 550px;
+    }
+   
+
+}
+
+@media screen and (max-width:425px) {
+    #logo21 {
+        width: 2.8em;
+        height: 2.8em;
+    }
+
+    .home .content h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .home .content h2 {
+        font-size: 35px;
+
+    }
+
+    .home #heroimg {
+        width: 175px;
+
+    }
+
+    .home .content p {
+        text-align: center;
+        font-size: 14px;
+
+
+    }
+
+    .banner {
+        height: 100vh;
+    }
+
+    .banner .img #image2 {
+        width: 280px;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner .content h3 {
+        font-size: 25px;
+    }
+
+    .banner .content p {
+        font-size: 14px;
+    }
+    .card-body .star{
+        width: 120px;
+       
+        margin-right: 70%;
+        
+        
+        
+    }
+
+    #product-sweet .card {
+        height: 450px;
+    }
+
+    #product-cards .card {
+        height: 450px;
+    }
+
+    #about .card {
+        height: 350px;
+    }
+
+    #about p {
+        text-align: center;
+    }
+
+    .card h3 {
+        text-align: start;
+    }
+
+
+
+    .card p {
+        text-align: start;
+    }
+
+    .card h6 {
+        text-align: start;
+    }
+
+    .banner .img #image2 {
+        width: 280px;
+    }
+    #gifthamper .img-fluid{
+        
+        height: 380px;
+        
+    }
+    #footer #footerexit {
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+}
+
+@media screen and (max-width:375px) {
+    #logo21 {
+        width: 2.6em;
+        height: 2.6em;
+    }
+
+    .home .content h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .home .content h2 {
+        font-size: 33px;
+
+    }
+
+    .home .content p {
+        text-align: center;
+        font-size: 11px;
+
+
+    }
+
+    .home #heroimg {
+        width: 170px;
+
+    }
+
+    .banner {
+        height: 100vh;
+    }
+
+    .banner .content h2 {
+        font-size: 40px;
+    }
+
+    .banner .content h3 {
+        font-size: 22px;
+    }
+
+    .banner .content p {
+        font-size: 12px;
+    }
+
+    .banner .img #image2 {
+        width: 260px;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #gifthamper .img-fluid{
+        
+        height: 340px;
+        
+    }
+    #about .card {
+        height: 280px;
+    }
+
+
+
+}
+
+@media screen and (max-width:320px) {
+
+
+    #logo21 {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .home {
+        height: 100vh;
+    }
+
+
+    .home .content h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+    .home .content h2 {
+        font-size: 30px;
+
+    }
+
+    .home .content p {
+        text-align: center;
+        font-size: 11px;
+
+
+    }
+
+    .home #heroimg {
+        width: 160px;
+
+    }
+
+    .banner {
+        height: 100vh;
+    }
+
+    .banner .content h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .banner .content h3 {
+        font-size: 17px;
+    }
+
+    .banner .content p {
+        font-size: 11px;
+        text-align: center;
+    }
+
+
+    .banner .img #image2 {
+        width: 240px;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #product-sweet .card {
+        height: 400px;
+    }
+
+    #product-cards .card {
+        height: 400px;
+    }
+    #gifthamper .img-fluid{
+        
+        height: 290px;
+        
+    }
+    #gifthamper .card-title{
+        font-size: 18px;
+    }
+#gifthamper .ghitem li{
+    font-size: 11px;
+}
+#gifthamper .card-price{
+    font-size: 14px;
+}
+    #about .card {
+        height: 280px;
+    }
+
+    #about p {
+        text-align: center;
+    }
+
+    .card h3 {
+        text-align: start;
+    }
+
+
+
+    .card p {
+        text-align: start;
+    }
+
+    .card h6 {
+        text-align: start;
+    }
+
+    #footer {
+        height: 60vh;
+    }
+
+    #footer h2 {
+        color: #e5e3b4;
+        padding-top: 30px;
+        font-size: 40px;
+    }
+
+    #footer p {
+        font-size: 12px;
+    }
+
+}
